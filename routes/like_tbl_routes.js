@@ -36,7 +36,7 @@ router.post('/',function(res,req,next){
             res.json(err);
         }
         else{
-            res.json(rows);
+            res.json(req.body);
         }
     })
 });
