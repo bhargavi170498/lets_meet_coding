@@ -28,7 +28,7 @@ router.get('/:id?',function(req,res,next){
     }
 });
 
-router.post('/',function(res,req,next){
+router.post('/',function(req, res, next){
 
     follows.addFollower(req.body,function(err,rows){
 

@@ -28,8 +28,9 @@ router.get('/:id?',function(req,res,next){
     }
 });
 
-router.post('/',function(res,req,next){
+router.post('/',function(req,res,next){
 
+    console.log('inside post call route');
     likes.addLike(req.body,function(err,rows){
 
         if(err){
@@ -38,7 +39,7 @@ router.post('/',function(res,req,next){
         else{
             res.json(req.body);
         }
-    })
+    });
 });
 
 
