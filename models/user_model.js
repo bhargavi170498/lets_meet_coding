@@ -6,7 +6,6 @@ var User = {
         return db.query("select * from user_tbl", callback);
     },
     getUserById: function (id, callback) {
-
         return db.query("select * from user_tbl where user_id=?", [id], callback);
     },
     addUser: function (u, callback) {
